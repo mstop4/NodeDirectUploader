@@ -39,7 +39,10 @@ app.get('/sign-s3', (req, res) => {
 
 app.post('/save-details', (req, res) => {
   // TODO: Read POSTed form data and do something useful
+  res.send("OK");
 });
 
-app.listen(process.env.PORT || 3000);
+var port = process.env.PORT || 3000;
+app.listen(port);
+console.log("App listening to " + port)
 
